@@ -1,7 +1,5 @@
 body{
-	color:#fff;
 	font-family: 'Lato', arial, sans-serif;
-	background-color: #E5E4E4;
 }
 
 #profile_image{
@@ -22,19 +20,43 @@ body{
 	text-align:right;
 }
 
+header h2{
+	margin-top:0px;
+}
+
 .wrapper{
 	margin-top:10px;
 	margin-bottom:10px;
 }
 
-#header{
-	padding: 10px 0;
-	border-top: 10px solid #1BBC9D;
-	border-bottom: 10px solid #1BBC9D;
+.nome{
+	color:#49515A;
 }
 
-#header, #knowledges, #sample_contact, #sample_courses, #languages, #contact_information, #contact, #about_me, #learn{
-	background-color: #2A2A2A;
+.desc{
+	color:#BBBDBF;
+}
+
+.section{
+	background-color:#f5f5f5;
+}
+
+.padding-inner{
+	padding:30px
+}
+
+.vertical-margin{
+	margin-bottom:30px
+}
+
+.el-padding-bottom{
+	padding-bottom:10px
+}
+
+#header{
+	padding:10px 0;
+	border-top:10px solid #BBBDBF;
+	border-bottom:10px solid #BBBDBF;
 }
 
 .knowledge{
@@ -43,21 +65,30 @@ body{
 
 footer{
 	height:40px;
-	background:#1BBC9D;
+	background-color:#BBBDBF;
 	line-height:40px;
 }
 
-.btn-green{
-	color:#fff;
-	background-color:#1BBC9D
+.gray{
+	color:#000;
+	background-color:#BBBDBF;
+}
+
+i::before{
+	padding-right:10px
+}
+.level-stars  i::before{
+	padding-right:0px !important;
+}
+
+.level-stars{
+display:inline-block
 }
 
 .ui-accordion-content{
-	background: #2A2A2A !important;
-	color:#fff !important;
+	background:#f5f5f5 !important;
 }
 
 .ui-accordion-header{
-	background: #1BBC9D !important;
-	color:#fff !important;
+	background:#BBBDBF !important;
 }
