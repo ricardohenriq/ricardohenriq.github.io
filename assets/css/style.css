@@ -80,6 +80,10 @@ i::before{
 	padding-right:0px !important;
 }
 
+textarea{
+	width:100%;
+}
+
 .level-stars{
 display:inline-block
 }
