@@ -19,7 +19,7 @@ body{
 	text-align:right;
 }
 
-header h2{
+h2, h4{
 	margin-top:0px;
 }
 
@@ -46,10 +46,6 @@ header h2{
 
 .vertical-margin{
 	margin-bottom:30px
-}
-
-.el-padding-bottom{
-	padding-bottom:10px
 }
 
 #header{
@@ -94,4 +90,19 @@ display:inline-block
 
 .ui-accordion-header{
 	background:#BBBDBF !important;
+}
+
+@media (max-width: 767px){
+	header{
+		text-align:center;
+	}
+	
+	#claws{
+		display:none;
+	}
+	
+	#menu{
+		padding-top:10px;
+		text-align:center;
+	}
 }
