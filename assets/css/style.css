@@ -48,10 +48,25 @@ h2, h4{
 	margin-bottom:30px
 }
 
-#header{
+header{
 	padding:10px 0;
 	border-top:10px solid #BBBDBF;
 	border-bottom:10px solid #BBBDBF;
+}
+
+.padding-inner-mini{
+	padding:10px
+}
+
+.trabalho{
+	margin-bottom:10px;
+	border:1px solid #BBBDBF;
+	background-color:#F5F5F5
+}
+
+.trabalho:hover{
+	border-left:4px solid #CE6F2D;
+	-webkit-box-shadow: 0 0 20px #BBBDBF;
 }
 
 footer{
