@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$("#knowledges").accordion({heightStyle:'content'});
+	$("#conhecimentos").accordion({heightStyle:'content'});
+	$("#aprender").accordion({heightStyle:'content'});
 });
 
 function sendMail(){
