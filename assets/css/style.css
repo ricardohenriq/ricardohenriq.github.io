@@ -59,9 +59,9 @@ h2, h4{
 }
 
 footer{
-	height:40px;
+	padding-top:10px;
+	padding-bottom:10px;
 	background-color:#BBBDBF;
-	line-height:40px;
 }
 
 .gray{
@@ -92,7 +92,7 @@ display:inline-block
 	background:#BBBDBF !important;
 }
 
-@media (max-width: 767px){
+@media(max-width: 780px){
 	header{
 		text-align:center;
 	}
@@ -104,5 +104,9 @@ display:inline-block
 	#menu{
 		padding-top:10px;
 		text-align:center;
+	}
+	
+	#profile_image{
+		margin-right:0
 	}
 }
