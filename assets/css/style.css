@@ -69,6 +69,12 @@ header{
 	-webkit-box-shadow: 0 0 20px #BBBDBF;
 }
 
+.orange, .orange:visited, .orange:link, .orange:hover, .orange:active{
+	font-weight:bold;
+	color:#CE6F2D;
+	text-decoration: none
+}
+
 footer{
 	padding-top:10px;
 	padding-bottom:10px;
@@ -81,7 +87,7 @@ footer{
 	border-color:#BBBDBF;
 }
 
-.gray:hover{
+.gray:hover, .gray:focus{
 	background-color:#BBBDBF;
 	border-color:#BBBDBF;
 }
