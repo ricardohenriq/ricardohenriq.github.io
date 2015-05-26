@@ -33,3 +33,51 @@ function sendMail(){
 			}
 	});
 }
+
+$("#site-pessoal-images").click(function(){
+    $.fancybox([
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+        ],{
+		'padding':0,
+		'transitionIn':'none',
+		'transitionOut':'none',
+		'type':'image',
+		'changeFade':0
+	});
+});
+
+$("#parser-images").click(function(){
+    $.fancybox([
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+        ],{
+		'padding':0,
+		'transitionIn':'none',
+		'transitionOut':'none',
+		'type':'image',
+		'changeFade':0
+	});
+});
+
+$("#video-content-images").click(function(){
+    $.fancybox([
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+        ],{
+		'padding':0,
+		'transitionIn':'none',
+		'transitionOut':'none',
+		'type':'image',
+		'changeFade':0
+	});
+});
