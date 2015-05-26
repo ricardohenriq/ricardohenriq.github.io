@@ -34,7 +34,7 @@ function sendMail(){
 	});
 }
 
-$("#site-pessoal-images").click(function(){
+$("#site-pessoal-imagens").click(function(){
     $.fancybox([
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
@@ -50,7 +50,7 @@ $("#site-pessoal-images").click(function(){
 	});
 });
 
-$("#parser-images").click(function(){
+$("#parser-imagens").click(function(){
     $.fancybox([
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
@@ -66,13 +66,13 @@ $("#parser-images").click(function(){
 	});
 });
 
-$("#video-content-images").click(function(){
+$("#video-content-imagens").click(function(){
     $.fancybox([
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/index.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/agregador-feeds.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/cadastro.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/feed.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/parceiros.png'
         ],{
 		'padding':0,
 		'transitionIn':'none',
