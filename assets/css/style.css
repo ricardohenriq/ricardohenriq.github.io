@@ -1,43 +1,43 @@
 body{
-	font-family: 'Lato', arial, sans-serif;
+	font-family: 'Lato', arial, sans-serif
 }
 
 #profile_image{
 	height:200px;
-	margin-right:30px;
+	margin-right:30px
 }
 
 #claws{
-	margin-top:-50px;
+	margin-top:-50px
 }
 
 #profile_content{
-	display: inline-block;
+	display: inline-block
 }
 
 #menu{
-	text-align:right;
+	text-align:right
 }
 
 h2, h4{
-	margin-top:0px;
+	margin-top:0px
 }
 
 .wrapper{
 	margin-top:10px;
-	margin-bottom:10px;
+	margin-bottom:10px
 }
 
 .nome{
-	color:#49515A;
+	color:#49515A
 }
 
 .desc{
-	color:#BBBDBF;
+	color:#BBBDBF
 }
 
 .section, header{
-	background-color:#f5f5f5;
+	background-color:#f5f5f5
 }
 
 .padding-inner{
@@ -51,7 +51,7 @@ h2, h4{
 header{
 	padding:10px 0;
 	border-top:10px solid #BBBDBF;
-	border-bottom:10px solid #BBBDBF;
+	border-bottom:10px solid #BBBDBF
 }
 
 .padding-inner-mini{
@@ -66,7 +66,7 @@ header{
 
 .trabalho:hover{
 	border-left:4px solid #CE6F2D;
-	-webkit-box-shadow: 0 0 20px #BBBDBF;
+	-webkit-box-shadow: 0 0 20px #BBBDBF
 }
 
 .orange, .orange:visited, .orange:link, .orange:hover, .orange:active{
@@ -78,29 +78,29 @@ header{
 footer{
 	padding-top:10px;
 	padding-bottom:10px;
-	background-color:#BBBDBF;
+	background-color:#BBBDBF
 }
 
 .gray{
 	color:#000;
 	background-color:#BBBDBF;
-	border-color:#BBBDBF;
+	border-color:#BBBDBF
 }
 
 .gray:hover, .gray:focus{
 	background-color:#BBBDBF;
-	border-color:#BBBDBF;
+	border-color:#BBBDBF
 }
 
 i::before{
 	padding-right:10px
 }
 .level-stars  i::before{
-	padding-right:0px !important;
+	padding-right:0px !important
 }
 
 textarea{
-	width:100%;
+	width:100%
 }
 
 .level-stars{
@@ -108,11 +108,11 @@ display:inline-block
 }
 
 .ui-accordion-content{
-	background:#f5f5f5 !important;
+	background:#f5f5f5 !important
 }
 
 .ui-accordion-header{
-	background:#BBBDBF !important;
+	background:#BBBDBF !important
 }
 .gly_medium{
 	font-size:14px
@@ -124,26 +124,30 @@ display:inline-block
 	position:absolute;
 	background-color:#fff;
 	width:308px;
-	margin-left:-5px;
+	margin-left:-5px
+}
+
+.thumbnail{
+	display:inline-block
 }
 
 .thumbnail:hover .caption{ 
 	opacity:1; 
-	z-index:1;
+	z-index:1
 }
 
 @media(max-width: 780px){
 	header{
-		text-align:center;
+		text-align:center
 	}
 	
 	#claws{
-		display:none;
+		display:none
 	}
 	
 	#menu{
 		padding-top:10px;
-		text-align:center;
+		text-align:center
 	}
 	
 	#profile_image{
