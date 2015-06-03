@@ -35,52 +35,47 @@ function sendMail(){
 }
 
 $("#site-pessoal-imagens").click(function(){
-    $.fancybox([
+    var urls = [
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
-        ],{
-		'padding':0,
-		'transitionIn':'none',
-		'transitionOut':'none',
-		'type':'image',
-		'changeFade':0
-	});
+    ];
+	getGallery(urls);
 });
 
 $("#parser-imagens").click(function(){
-    $.fancybox([
+    var urls = [
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
-        ],{
-		'padding':0,
-		'transitionIn':'none',
-		'transitionOut':'none',
-		'type':'image',
-		'changeFade':0
-	});
+    ];
+	getGallery(urls);
 });
 
 $("#video-content-imagens").click(function(){
-    $.fancybox([
+	var urls = [
 		'http://ricardohenriq.github.io/assets/images/projetos/video-content/index.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/video-content/agregador-feeds.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/video-content/cadastro.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/video-content/feed.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/video-content/parceiros.png'
-        ],{
+	];
+	getGallery(urls);
+});
+
+function getGallery(urls){
+	$.fancybox(urls,{
 		'padding':0,
 		'transitionIn':'none',
 		'transitionOut':'none',
 		'type':'image',
 		'changeFade':0
 	});
-});
+}
 
 var _gaq = [['_setAccount', 'UA-63633330-1'], ['_trackPageview']];
 (function(d, t){
