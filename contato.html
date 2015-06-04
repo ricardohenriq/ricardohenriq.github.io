@@ -6,7 +6,7 @@
 		<meta http-equiv="content-language" content="pt-br">
 		<meta http-equiv="cache-control" content="public">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>Sobre mim - Ricardo Henrique</title>
+		<title>Contato - Ricardo Henrique</title>
 		<meta name="description" content="Engenheiro de Software e Desenvolvedor Web com conhecimentos em PHP, 
 		MySql, XHTML, CSS, Javascript e Gerência de Projetos e outras tecnologias pela Universidade Federal de 
 		Goiás (UFG)">
@@ -52,15 +52,15 @@
 								<img src="assets/images/social/Github.png" title="Github" alt="Github">
 							</a>
 							<a href="http://pt.stackoverflow.com/users/11443/ricardo-henrique" target="_blank">
-								<img src="assets/images/social/ptstackoverflow.png" title="pt.stackoverflow" alt="pt.stackoverflow">
+								<img src="assets/images/social/ptstackoverflow.png" style="height:40px" title="pt.stackoverflow" alt="pt.stackoverflow">
 							</a>
 						</div>
 						<img id="claws" src="assets/images/misc/Claws.png">
 						<div id="menu">
-							<a class="btn btn-xs btn-info gray" href="#">Sobre mim</a>
+							<a class="btn btn-xs btn-info gray" href="index.html">Sobre mim</a>
 							<a class="btn btn-xs btn-info gray" href="conhecimentos.html">Conhecimentos</a>
 							<a class="btn btn-xs btn-info gray" href="aprender.html">Aprender e Atualizar</a>
-							<a class="btn btn-xs btn-info gray" href="contato.html">Contato</a>
+							<a class="btn btn-xs btn-info gray" href="#">Contato</a>
 							<a class="btn btn-xs btn-info gray" href="experiencia.html">Experiência</a>
 							<a class="btn btn-xs btn-info gray" href="portfolio.html">Portfólio</a>
 						</div>
@@ -72,63 +72,58 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 section">
-						<h2>Sobre mim</h2>
-						<p>
-							Sou bacharelando em Engenharia de Software pela Universidade Federal de Goiás (UFG), 
-							durante os 3 primeiros períodos da faculdade trabalhei com a linguagem C e posteriormente 
-							mais 4 períodos utilizando Java na construção das aplicações utilizadas como trabalho 
-							acadêmico, pude trabalhar com Engenharia de Requisitos e com processos gerencias do 
-							desenvolvimento usando metodologias ágeis como Scrum.<br ><br >
-							Por conta própria estudei sobre desenvolvimento Back-end e Front-end de sistemas web usando 
-							frameworks que visam a criação de uma interface de usuário responsiva, e integração com uma 
-							base de dados.<br ><br >
-							Trabalhei com ferramentas de gestão, projeto e desenvolvimento, juntamente 
-							com outras ferramentas de propósitos mais específicos pertinentes quase exclusivamente a
-							implementação de cada aplicação construída.
-						</p>
+						<h2 class="text-center">Formulário de Contato</h2>
+						<form id="contact_form" class="form-horizontal" role="form" method="POST">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="nome">Nome:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="nome" id="nome" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">Email:</label>
+								<div class="col-sm-10">          
+									<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="assunto">Assunto:</label>
+								<div class="col-sm-10">          
+									<input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="desc">Descrição:</label>
+								<div class="col-sm-10">          
+									<textarea rows="4" name="desc" id="desc" maxlength="1000"></textarea>
+								</div>
+							</div>
+							<div class="form-group">        
+								<div class="col-sm-offset-2 col-sm-10">
+									<button class="btn btn-info gray pull-right" onClick="sendMail();return false;">Enviar</button>
+								</div>
+							</div>
+						</form>
 					</div>
 					<div class="col-md-4">
-						<div class="section padding-inner vertical-margin">
-							<div class="block el-padding-bottom">
+						<div class="section padding-inner">
+							<h2>Contato</h2>
+							<h4>Ricardo Henrique</h4>
+							<div class="block">
 								<i class="glyphicon glyphicon-map-marker"></i>
-								<strong>Brasil - Goiânia, Goiás</strong>
+								Goiânia, GO 74723-290
 							</div>
-							<div class="block el-padding-bottom">
+							<div class="block">
+								<i class="glyphicon glyphicon-phone-alt"></i>
+								Tel: (62)
+							</div>
+							<div class="block">
+								<i class="glyphicon glyphicon-phone"></i>
+								Cel: (62)
+							</div>
+							<div class="block">
 								<i class="glyphicon glyphicon-envelope"></i>
-								<a href="mailto:ricardohenrique996@gmail.com" class="orange">ricardohenrique996@gmail.com</a>
-							</div>
-							<div class="block">
-								<i class="glyphicon glyphicon-link"></i>
-								<a href="https://www.dropbox.com/s/a6o8m9afldpe48z/Curriculo.pdf?dl=0" class="orange">Curriculo completo</a>
-							</div>
-						</div>
-						<div class="section padding-inner vertical-margin">
-							<h4>Educação</h4>
-							<div class="block">
-								<i class="glyphicon glyphicon-book"></i>
-								<strong>Engenharia de Software</strong><br>
-								Universidade Federal de Goiás (2012-2016)
-							</div>	
-						</div>
-						<div class="section padding-inner vertical-margin">
-							<h4>Idiomas</h4>
-							<div class="block el-padding-bottom">
-								<strong>Português:</strong> Nativo
-								<div class="level-stars">
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-								</div>
-							</div>
-							<div class="block">
-								<strong>Inglês:</strong> Intermediario
-								<div class="level-stars">
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-									<i class="glyphicon glyphicon-star"></i>
-								</div>
+								Email: <a href="mailto:ricardohenrique996@gmail.com" class="orange">ricardohenrique996@gmail.com</a>
 							</div>
 						</div>
 					</div>

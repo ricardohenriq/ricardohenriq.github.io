@@ -1,5 +1,6 @@
 body{
-	font-family: 'Lato', arial, sans-serif
+	position:relative;
+	font-family:'Lato', arial, sans-serif
 }
 
 #profile_image{
@@ -11,7 +12,7 @@ body{
 }
 
 #profile_content{
-	display: inline-block
+	display:inline-block
 }
 
 #menu{
@@ -65,13 +66,13 @@ header{
 
 .trabalho:hover{
 	border-left:4px solid #CE6F2D;
-	-webkit-box-shadow: 0 0 20px #BBBDBF
+	-webkit-box-shadow:0 0 20px #BBBDBF
 }
 
 .orange, .orange:visited, .orange:link, .orange:hover, .orange:active{
 	font-weight:bold;
 	color:#CE6F2D;
-	text-decoration: none
+	text-decoration:none
 }
 
 .social{
@@ -191,6 +192,10 @@ footer{
 	padding-top:10px;
 	padding-bottom:10px;
 	background-color:#BBBDBF;
+	position:absolute;
+	bottom:0;
+	margin-bottom:-40px;
+	width:100%;
 }
 
 .gray{
@@ -248,7 +253,7 @@ display:inline-block
 	z-index:1
 }
 
-@media(max-width: 780px){
+@media(max-width:780px){
 	header{
 		text-align:center
 	}
