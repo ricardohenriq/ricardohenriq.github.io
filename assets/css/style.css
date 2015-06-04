@@ -74,6 +74,119 @@ header{
 	text-decoration: none
 }
 
+.social{
+	background:url('../images/social/social-sprite.png') 0 0 no-repeat;
+	display:inline-block;
+	width:40px;
+	height:40px
+}
+
+#email{
+	background-position:0 0
+}
+
+#linkedin{
+	background-position:0 -40px
+}
+
+#curriculum{
+	background-position:0 -160px
+}
+
+#github{
+	background-position:0 -80px
+}
+
+#sopt{
+	background-position:0 -120px
+}
+
+.aprender{
+	background:url('../images/logos/logos3-sprite.png') 0 0 no-repeat;
+	display:inline-block
+}
+
+#html5{
+	background-position:0 0;
+	width:60px;
+	height:60px
+}
+
+#css3{
+	background-position:0 -60px;
+	width:43px;
+	height:60px
+}
+
+#zend{
+	background-position:0 -120px;
+	width:100px;
+	height:53px
+}
+
+#doctrine2{
+	background-position:0 -173px;
+	width:100px;
+	height:47px
+}
+
+#selenium-grid{
+	background-position:0 -220px;
+	width:64px;
+	height:64px
+}
+#selenium-ide{
+	background-position:0 -284px;
+	width:64px;
+	height:64px
+}
+#selenium-rc{
+	background-position:0 -348px;
+	width:64px;
+	height:64px
+}
+#selenium-web{
+	background-position:0 -412px;
+	width:64px;
+	height:64px
+}
+
+#mongo{
+	background-position:0 -476px;
+	width:53px;
+	height:60px
+}
+
+#jenkins{
+	background-position:0 -591px;
+	width:60px;
+	height:60px
+}
+
+#phpstorm{
+	background-position:0 -536px;
+	width:100px;
+	height:55px
+}
+
+#mysql-workbench{
+	background-position:0 -651px;
+	width:100px;
+	height:51px
+}
+
+#pivotal-tracker{
+	background-position:0 -702px;
+	width:100px;
+	height:57px
+}
+
+#sonarqube{
+	background-position:0 -759px;
+	width:100px;
+	height:24px
+}
+
 footer{
 	padding-top:10px;
 	padding-bottom:10px;
