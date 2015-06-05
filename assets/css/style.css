@@ -235,22 +235,24 @@ display:inline-block
 	font-size:14px
 }
 
-.caption{
-	opacity:0; 
-	transition:opacity .5s;
-	position:absolute;
-	background-color:#fff;
-	width:308px;
-	margin-left:-5px
+.caption {
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .5s;
+    position:absolute;
+    background-color:#fff;
+    width:308px;
+    margin-left:-5px
 }
 
 .thumbnail{
 	display:inline-block
 }
 
-.thumbnail:hover .caption{ 
-	opacity:1; 
-	z-index:1
+.thumbnail:hover .caption {
+    visibility:visible;
+    opacity:1;
+    z-index:1
 }
 
 @media(max-width:780px){
