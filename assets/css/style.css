@@ -1,6 +1,9 @@
 body{
-	position:relative;
-	font-family:'Lato', arial, sans-serif
+	position:relative
+}
+
+a,i{
+	margin-right:4px
 }
 
 #profile_image{
@@ -82,7 +85,7 @@ header{
 	height:40px
 }
 
-#email{
+#send_email{
 	background-position:0 0
 }
 
@@ -136,16 +139,19 @@ header{
 	width:64px;
 	height:64px
 }
+
 #selenium-ide{
 	background-position:0 -284px;
 	width:64px;
 	height:64px
 }
+
 #selenium-rc{
 	background-position:0 -348px;
 	width:64px;
 	height:64px
 }
+
 #selenium-web{
 	background-position:0 -412px;
 	width:64px;

@@ -3,16 +3,36 @@ $(document).ready(function(){
 	$("#aprender").accordion({heightStyle:'content'});
 });
 
-function sendMail(){
+function stripTags(str){
+    return str.replace(/<\/?[^>]+>/gi, '');
+}
+
+function validateContactForm(){
 	var nome = document.getElementById("nome").value;
+	nome = stripTags(nome);
 	var email = document.getElementById("email").value;
+	email = stripTags(email);
 	var assunto = document.getElementById("assunto").value;
+	assunto = stripTags(assunto);
 	var desc = document.getElementById("desc").value;
-	var body = '<strong>Nome: </strong>'+nome+'<br />'+
-			   '<strong>Email: </strong>'+email+'<br />'+
-			   '<strong>Assunto: </strong>'+assunto+'<br />'+
-			   '<strong>Descição: </strong>'+desc;
-	
+	desc = stripTags(desc);
+	return {
+		nome:nome,
+		email:email,
+		assunto:assunto,
+		desc:desc
+	};
+}
+
+function createContactEmail(formValues){
+	var body = '<strong>Nome: </strong>'+formValues.nome+'<br />'+
+			   '<strong>Email: </strong>'+formValues.email+'<br />'+
+			   '<strong>Assunto: </strong>'+formValues.assunto+'<br />'+
+			   '<strong>Descição: </strong>'+formValues.desc;
+	return body;
+}
+
+function sendToMandrill(body){
 	$.ajax({
 		type:"POST",
 		url:"https://mandrillapp.com/api/1.0/messages/send.json",
@@ -34,18 +54,14 @@ function sendMail(){
 	});
 }
 
-$("#site-pessoal-imagens").click(function(){
-    var urls = [
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
-    ];
-	getGallery(urls);
-});
+function sendMail(){
+	var formValues = validateContactForm();
+	var body = createContactEmail(formValues);
+	sendToMandrill(body);
+	alert('Email Enviado!');
+}
 
-$("#parser-imagens").click(function(){
+$("#site-pessoal-imagens").click(function(){
     var urls = [
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
 		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',

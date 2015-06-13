@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="content-language" content="pt-br">
-		<meta http-equiv="cache-control" content="public">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Sobre mim - Ricardo Henrique</title>
 		<meta name="description" content="Engenheiro de Software e Desenvolvedor Web com conhecimentos em PHP, 
@@ -25,10 +23,22 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Ricardo Henrique - Engenheiro de Software">
 		<link rel="stylesheet" href="library/Bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/style.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
 		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
-		<script defer src="assets/js/main.min.js"></script>
+		<script defer src="assets/js/main.js"></script>
+		<script type="application/ld+json">
+		{
+			"@context":"http://schema.org",
+			"@type":"WebSite",
+			"url":"http://ricardohenriq.github.io/",
+			"potentialAction":{
+				"@type":"SearchAction",
+				"target":"http://ricardohenriq.github.io/search?q={q}",
+				"query-input":"required name=q"
+		    }
+		}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -39,21 +49,11 @@
 						<div id="profile_content">
 							<h1 class="nome"><strong>Ricardo Henrique</strong></h1>
 							<h2 class="desc">Engenheiro de Software</h2>
-							<a href="mailto:ricardohenrique996@gmail.com" target="_blank">
-								<img src="assets/images/social/Email.png" title="Send Email" alt="Send Email">
-							</a>
-							<a href="https://br.linkedin.com/pub/ricardo-henrique-in%C3%A1cio-da-silva/82/9a5/b48" target="_blank">
-								<img src="assets/images/social/Linkedin.png" title="Linkedin" alt="Linkedin">
-							</a>
-							<a href="https://www.dropbox.com/s/a6o8m9afldpe48z/Curriculo.pdf?dl=0" target="_blank">
-								<img src="assets/images/social/Curriculum.png" title="Curriculum" alt="Curriculum">
-							</a>
-							<a href="https://github.com/ricardohenriq/" target="_blank">
-								<img src="assets/images/social/Github.png" title="Github" alt="Github">
-							</a>
-							<a href="http://pt.stackoverflow.com/users/11443/ricardo-henrique" target="_blank">
-								<img src="assets/images/social/ptstackoverflow.png" title="pt.stackoverflow" alt="pt.stackoverflow">
-							</a>
+							<a href="mailto:ricardohenrique996@gmail.com" class="social" id="send_email" target="_blank"></a>
+							<a href="https://br.linkedin.com/pub/ricardo-henrique-in%C3%A1cio-da-silva/82/9a5/b48" class="social" id="linkedin" target="_blank"></a>
+							<a href="https://www.dropbox.com/s/a6o8m9afldpe48z/Curriculo.pdf?dl=0" class="social" id="curriculum" target="_blank"></a>
+							<a href="https://github.com/ricardohenriq/" class="social" id="github" target="_blank"></a>
+							<a href="http://pt.stackoverflow.com/users/11443/ricardo-henrique" class="social" id="sopt" target="_blank"></a>
 						</div>
 						<img id="claws" src="assets/images/misc/Claws.png">
 						<div id="menu">
@@ -138,6 +138,5 @@
 		<footer class="text-center">
 			Ricardo Henrique - 2015. Todos os direitos reservados
 		</footer>
-		
 	</body>
 </html>

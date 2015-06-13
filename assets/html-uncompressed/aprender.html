@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="content-language" content="pt-br">
-		<meta http-equiv="cache-control" content="public">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Aprender e Atualizar - Ricardo Henrique</title>
 		<meta name="description" content="Engenheiro de Software e Desenvolvedor Web com conhecimentos em PHP, 
@@ -26,11 +24,11 @@
 		<meta property="og:site_name" content="Ricardo Henrique - Engenheiro de Software">
 		<link rel="stylesheet" href="library/Bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="library/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-		<link rel="stylesheet" href="assets/css/style.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
 		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
 		<script defer src="library/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-		<script defer src="assets/js/main.min.js"></script>
+		<script defer src="assets/js/main.js"></script>
 	</head>
 	<body>
 		<header>
@@ -41,21 +39,11 @@
 						<div id="profile_content">
 							<h1 class="nome"><strong>Ricardo Henrique</strong></h1>
 							<h2 class="desc">Engenheiro de Software</h2>
-							<a href="mailto:ricardohenrique996@gmail.com" target="_blank">
-								<img src="assets/images/social/Email.png" title="Send Email" alt="Send Email">
-							</a>
-							<a href="https://br.linkedin.com/pub/ricardo-henrique-in%C3%A1cio-da-silva/82/9a5/b48" target="_blank">
-								<img src="assets/images/social/Linkedin.png" title="Linkedin" alt="Linkedin">
-							</a>
-							<a href="https://www.dropbox.com/s/a6o8m9afldpe48z/Curriculo.pdf?dl=0" target="_blank">
-								<img src="assets/images/social/Curriculum.png" title="Curriculum" alt="Curriculum">
-							</a>
-							<a href="https://github.com/ricardohenriq/" target="_blank">
-								<img src="assets/images/social/Github.png" title="Github" alt="Github">
-							</a>
-							<a href="http://pt.stackoverflow.com/users/11443/ricardo-henrique" target="_blank">
-								<img src="assets/images/social/ptstackoverflow.png" style="height:40px" title="pt.stackoverflow" alt="pt.stackoverflow">
-							</a>
+							<a href="mailto:ricardohenrique996@gmail.com" class="social" id="send_email" target="_blank"></a>
+							<a href="https://br.linkedin.com/pub/ricardo-henrique-in%C3%A1cio-da-silva/82/9a5/b48" class="social" id="linkedin" target="_blank"></a>
+							<a href="https://www.dropbox.com/s/a6o8m9afldpe48z/Curriculo.pdf?dl=0" class="social" id="curriculum" target="_blank"></a>
+							<a href="https://github.com/ricardohenriq/" class="social" id="github" target="_blank"></a>
+							<a href="http://pt.stackoverflow.com/users/11443/ricardo-henrique" class="social" id="sopt" target="_blank"></a>
 						</div>
 						<img id="claws" src="assets/images/misc/Claws.png">
 						<div id="menu">
@@ -76,35 +64,35 @@
 					<div id="aprender" class="col-md-8 section">
 						<h3>Atualizando</h3>
 						<div>
-							<img src="assets/images/logos/HTML5.png" title="HTML5" alt="HTML5">
-							<img src="assets/images/logos/CSS3.png" title="CSS3" alt="CSS3">
+							<i class="aprender" id="html5"></i>
+							<i class="aprender" id="css3"></i>
 						</div>
 						<h3>Frameworks</h3>
 						<div>
-							<img src="assets/images/logos/Zend-Framework.png" title="Zend Framework" alt="Zend Framework">
+							<i class="aprender" id="zend"></i>
 						</div>
 						<h3>ORM</h3>
 						<div>
-							<img src="assets/images/logos/Doctrine-2.png" title="Doctrine 2" alt="Doctrine 2">	
+							<i class="aprender" id="doctrine2"></i>
 						</div>
 						<h3>Teste</h3>
 						<div>
-							<img src="assets/images/logos/Selenium-Grid.png" title="Selenium Grid" alt="Selenium Grid">
-							<img src="assets/images/logos/Selenium-IDE.png" title="Selenium IDE" alt="Selenium IDE">
-							<img src="assets/images/logos/Selenium-Remote-Control.png" title="Selenium Remote Control" alt="Selenium Remote Control">
-							<img src="assets/images/logos/Selenium-WebDriver.png" title="Selenium WebDriver" alt="Selenium WebDriver">
+							<i class="aprender" id="selenium-grid"></i>
+							<i class="aprender" id="selenium-ide"></i>
+							<i class="aprender" id="selenium-rc"></i>
+							<i class="aprender" id="selenium-web"></i>
 						</div>
 						<h3>Banco de Dados</h3>
 						<div>
-							<img src="assets/images/logos/MongoDB.png" title="MongoDB" alt="MongoDB">
+							<i class="aprender" id="mongo"></i>
 						</div>
 						<h3>Ferramentas</h3>
-						<div>						
-							<img src="assets/images/logos/Jenkins.png" title="Jenkins" alt="Jenkins">
-							<img src="assets/images/logos/PHPStorm.png" title="PHPStorm" alt="PHPStorm">				
-							<img src="assets/images/logos/MySql-Workbench.png" title="MySql Workbench" alt="MySql Workbench">							
-							<img src="assets/images/logos/Pivotal-Tracker.png" title="Pivotal Tracker" alt="Pivotal Tracker">
-							<img src="assets/images/logos/Sonarqube.png" title="Sonarqube" alt="Sonarqube">
+						<div>
+							<i class="aprender" id="jenkins"></i>
+							<i class="aprender" id="phpstorm"></i>
+							<i class="aprender" id="mysql-workbench"></i>
+							<i class="aprender" id="pivotal-tracker"></i>
+							<i class="aprender" id="sonarqube"></i>
 						</div>
 					</div>
 					<div class="col-md-4">
