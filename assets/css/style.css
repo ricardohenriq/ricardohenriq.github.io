@@ -390,24 +390,69 @@ display:inline-block
 	font-size:14px
 }
 
-.caption {
-    opacity:0;
-    visibility:hidden;
-    transition:opacity .5s;
-    position:absolute;
-    background-color:#fff;
-    width:308px;
-    margin-left:-5px
+.view{
+   display:inline-block;
+   position:relative;
+   text-align:center
 }
 
-.thumbnail{
-	display:inline-block
+.view .mask{
+	width:300px;
+	height:168px;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0
 }
 
-.thumbnail:hover .caption {
-    visibility:visible;
-    opacity:1;
-    z-index:1
+.view h2{
+	font-weight:bold;
+	color:#000;
+    text-align:center;
+    font-size:17px;
+    padding:13px;
+    background:#BBBDBF;
+	margin:20px 0 0 0
+}
+
+.info{
+	margin-top:30px 
+}
+
+.view-first .mask{
+   opacity:0;
+   background-color:#fff;
+   -webkit-transition:all 0.4s ease-in-out
+}
+
+.view-first h2{
+   -webkit-transform:translateY(-100px);
+   -webkit-transition:all 0.2s ease-in-out
+}
+
+.view-first p{
+   -webkit-transform:translateY(100px);
+   -webkit-transition:all 0.2s linear
+}
+
+.view-first .info{
+   -webkit-transition:all 0.2s ease-in-out
+}
+
+.view-first:hover .mask{
+   opacity:1
+}
+
+.view-first:hover h2 ,.view-first:hover .info{
+   -webkit-transform:translateY(0px)
+}
+
+.view-first:hover p{
+   -webkit-transition-delay:0.1s
+}
+
+.view-first:hover a.info{
+   -webkit-transition-delay:0.2s
 }
 
 @media(max-width:780px){
