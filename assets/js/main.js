@@ -61,24 +61,29 @@ function sendMail(){
 	alert('Email Enviado!');
 }
 
+$("#contact-form-email").click(function(){
+	sendMail();
+	return false;
+});
+
 $("#site-pessoal-imagens").click(function(){
     var urls = [
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/conhecimentos.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/experiencia.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/sobre-mim.png'
     ];
 	getGallery(urls);
 });
 
 $("#video-content-imagens").click(function(){
 	var urls = [
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/index.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/agregador-feeds.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/cadastro.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/feed.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/parceiros.png'
+		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/index.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/agregador-feeds.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/cadastro.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/feed.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/parceiros.png'
 	];
 	getGallery(urls);
 });
