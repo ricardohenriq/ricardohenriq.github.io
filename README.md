@@ -1,4 +1,4 @@
-# ricardohenriq.github.io
+# ricardohenrique.divshot.io
 ### Este é um site pessoal onde exponho:
 
   - Uma descrição minha
