@@ -88,6 +88,32 @@ $("#video-content-imagens").click(function(){
 	getGallery(urls);
 });
 
+$("#mybanners-imagens").click(function(){
+	var urls = [
+		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/index.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/send-banner.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/terms-of-use.png'
+	];
+	getGallery(urls);
+});
+
+$("#multitools-imagens").click(function(){
+	var urls = [
+		'http://ricardohenrique.divshot.io/assets/images/projetos/multitools/index.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/multitools/ascii-art.png'
+	];
+	getGallery(urls);
+});
+
+$("#cloudtags-imagens").click(function(){
+	var urls = [
+		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/index.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/banners.png',
+		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/send-link.png'
+	];
+	getGallery(urls);
+});
+
 function getGallery(urls){
 	$.fancybox(urls,{
 		'padding':0,
