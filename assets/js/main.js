@@ -39,10 +39,10 @@ function sendToMandrill(body){
 		data:{
 				'key':'Akj5sUZpdPZ7O3LbpPpSiw',
 				'message':{
-					'from_email':'albernazassis@gmail.com',
+					'from_email':'ricardohenrique996@gmail.com',
 					'to':[
 						{
-							'email':'albernazassis@gmail.com',
+							'email':'ricardohenrique996@gmail.com',
 							'name':'Ricardo Henrique',
 							'type':'to'
 						}
@@ -68,48 +68,48 @@ $("#contact-form-email").click(function(){
 
 $("#site-pessoal-imagens").click(function(){
     var urls = [
-		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/conhecimentos.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/experiencia.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/site-pessoal/sobre-mim.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/conhecimentos.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/atualizar-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/contato-responsivo.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/experiencia.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/site-pessoal/sobre-mim.png'
     ];
 	getGallery(urls);
 });
 
 $("#video-content-imagens").click(function(){
 	var urls = [
-		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/index.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/agregador-feeds.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/cadastro.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/feed.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/video-content/parceiros.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/index.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/agregador-feeds.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/cadastro.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/feed.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/video-content/parceiros.png'
 	];
 	getGallery(urls);
 });
 
 $("#mybanners-imagens").click(function(){
 	var urls = [
-		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/index.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/send-banner.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/mybanners/terms-of-use.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/mybanners/index.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/mybanners/send-banner.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/mybanners/terms-of-use.png'
 	];
 	getGallery(urls);
 });
 
 $("#multitools-imagens").click(function(){
 	var urls = [
-		'http://ricardohenrique.divshot.io/assets/images/projetos/multitools/index.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/multitools/ascii-art.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/multitools/index.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/multitools/ascii-art.png'
 	];
 	getGallery(urls);
 });
 
 $("#cloudtags-imagens").click(function(){
 	var urls = [
-		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/index.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/banners.png',
-		'http://ricardohenrique.divshot.io/assets/images/projetos/cloudtags/send-link.png'
+		'http://ricardohenriq.github.io/assets/images/projetos/cloudtags/index.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/cloudtags/banners.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/cloudtags/send-link.png'
 	];
 	getGallery(urls);
 });
