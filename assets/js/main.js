@@ -77,17 +77,6 @@ $("#site-pessoal-imagens").click(function(){
 	getGallery(urls);
 });
 
-$("#video-content-imagens").click(function(){
-	var urls = [
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/index.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/agregador-feeds.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/cadastro.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/feed.png',
-		'http://ricardohenriq.github.io/assets/images/projetos/video-content/parceiros.png'
-	];
-	getGallery(urls);
-});
-
 $("#mybanners-imagens").click(function(){
 	var urls = [
 		'http://ricardohenriq.github.io/assets/images/projetos/mybanners/index.png',
