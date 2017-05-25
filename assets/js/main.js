@@ -8,57 +8,39 @@ function stripTags(str){
 }
 
 function validateContactForm(){
-	var nome = document.getElementById("nome").value;
-	nome = stripTags(nome);
+	var Name = document.getElementById("nome").value;
+	name = stripTags(name);
 	var email = document.getElementById("email").value;
 	email = stripTags(email);
-	var assunto = document.getElementById("assunto").value;
-	assunto = stripTags(assunto);
-	var desc = document.getElementById("desc").value;
-	desc = stripTags(desc);
+	var subject = document.getElementById("assunto").value;
+	subject = stripTags(subject);
+	var description = document.getElementById("desc").value;
+	description = stripTags(description);
 	return {
-		nome:nome,
-		email:email,
-		assunto:assunto,
-		desc:desc
+		Name:name,
+		Email:email,
+		Subject:subject,
+		Description:description
 	};
-}
-
-function createContactEmail(formValues){
-	var body = '<strong>Nome: </strong>'+formValues.nome+'<br />'+
-			   '<strong>Email: </strong>'+formValues.email+'<br />'+
-			   '<strong>Assunto: </strong>'+formValues.assunto+'<br />'+
-			   '<strong>Descição: </strong>'+formValues.desc;
-	return body;
-}
-
-function sendToMandrill(body){
-	$.ajax({
-		type:"POST",
-		url:"https://mandrillapp.com/api/1.0/messages/send.json",
-		data:{
-				'key':'Akj5sUZpdPZ7O3LbpPpSiw',
-				'message':{
-					'from_email':'ricardohenrique996@gmail.com',
-					'to':[
-						{
-							'email':'ricardohenrique996@gmail.com',
-							'name':'Ricardo Henrique',
-							'type':'to'
-						}
-					],
-					'subject':'[MandrillJS] Portfolio',
-					'html':body
-				}
-			}
-	});
 }
 
 function sendMail(){
 	var formValues = validateContactForm();
-	var body = createContactEmail(formValues);
-	sendToMandrill(body);
-	alert('Email Enviado!');
+	
+	emailjs.send("my_service","my_template",{
+		Name: formValues.Name, 
+		Email: formValues.Email,
+		Subject: formValues.Subject,
+		Description: formValues.Description
+		})
+	.then(
+		function(response) {
+			alert('Email Enviado!');
+		}, 
+		function(error) {
+			alert('Houve um Erro, envie diretamente pelo email disponibilizado!');
+		}
+	);
 }
 
 $("#contact-form-email").click(function(){
