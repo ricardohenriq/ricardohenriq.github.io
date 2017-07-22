@@ -27,7 +27,7 @@ function validateContactForm(){
 function sendMail(){
 	var formValues = validateContactForm();
 	
-	emailjs.send("my_service","my_template",{
+	emailjs.send("gmail","basic_template",{
 		Name: formValues.Name, 
 		Email: formValues.Email,
 		Subject: formValues.Subject,
