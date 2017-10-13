@@ -85,6 +85,24 @@ $("#cloudtags-imagens").click(function(){
 	getGallery(urls);
 });
 
+$("#compras007-imagens").click(function(){
+	var urls = [
+		'http://ricardohenriq.github.io/assets/images/projetos/compras007/pagina-login.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/compras007/pagina-inicial.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/compras007/pagina-pedidos.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/compras007/pagina-editar-pedido.png'
+	];
+	getGallery(urls);
+});
+
+$("#fastmove-imagens").click(function(){
+	var urls = [
+		'http://ricardohenriq.github.io/assets/images/projetos/fast-move/principal.png',
+		'http://ricardohenriq.github.io/assets/images/projetos/fast-move/registro.png'
+	];
+	getGallery(urls);
+});
+
 function getGallery(urls){
 	$.fancybox(urls,{
 		'padding':0,
