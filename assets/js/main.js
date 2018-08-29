@@ -103,6 +103,14 @@ $("#fastmove-imagens").click(function(){
 	getGallery(urls);
 });
 
+$("#avalie-compras007-imagens").click(function(){
+	var urls = [
+		'http://ricardohenriq.github.io/assets/images/projetos/avalie-compras007/avalie-admin.jpg',
+		'http://ricardohenriq.github.io/assets/images/projetos/avalie-compras007/avalie-inicial.jpg'
+	];
+	getGallery(urls);
+});
+
 function getGallery(urls){
 	$.fancybox(urls,{
 		'padding':0,
